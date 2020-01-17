@@ -1,6 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  // font-family: 'Parisienne', cursive;
+// font-family: 'Abril Fatface', cursive;
+  font-family: 'Lora', serif;
+}
 
+h1 {
+  font-family: 'Abril Fatface', cursive;
+}
 .task {
   height: auto;
   width: auto;
@@ -60,4 +68,8 @@ h6 {
 
 .hide {
   display: none;
+}
+
+.rsvp-btn {
+  font-family: 'Parisienne', cursive;
 }
