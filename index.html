@@ -10,11 +10,14 @@
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lora|Parisienne&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     </head>
     <body>
+      <div class="body">
         <section class="auth">
             <h1>Party On</h1>
-            <p class="instructions">Welcome! </br> You can plan parties and RSVP with this web application</p>
+            <h5 class="instructions">Welcome! </br> You can plan parties and RSVP with this web application</h5>
               <div class="rsvp-message"> </div>
           <section class="status"></section>
           <section class="before-auth">
@@ -37,6 +40,9 @@
             <button class="btn btn-primary get-all-party" id="get-all-party">Show all Parties</button>
           </section>
           <section class="after-auth">
+            <button class="btn btn-link account-btn"> Account Info </button>
+            <div class="account-info">
+            <button class="btn btn-link hide-account"> Hide </button>
             <h2>Change Password</h2>
             <form id="change-password">
               <input type="password" name="passwords[old]" placeholder="Old Password">
@@ -47,6 +53,7 @@
           <form id="sign-out">
             <button class="btn btn-danger">Sign out</button>
           </form>
+        </div>
         </section>
       <section class="task-list">
         <div class="user-message"> </div>
@@ -66,5 +73,6 @@
       <section class="results">
       </section>
       <div class="content"> </div>
+    </div>
     </body>
 </html>

@@ -1,6 +1,41 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  // font-family: 'Parisienne', cursive;
+// font-family: 'Abril Fatface', cursive;
+  font-family: 'Lora', serif;
+  background-image: url('https://previews.123rf.com/images/farazhyder/farazhyder1801/farazhyder180100011/93007331-golden-shimmer-and-glitter-background-gold-wallpaper.jpg');
+}
 
+button {
+  font-family: 'Oxygen', sans-serif;
+  margin: 5px;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+form {
+  padding: 20px;
+}
+
+.account-info {
+  display: none;
+}
+
+.body {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  background-color: white;
+  justify-content: center;
+}
+
+.instructions {
+  padding: 20px;
+}
 .task {
   height: auto;
   width: auto;
@@ -39,10 +74,8 @@ h6 {
 }
 
 .after-auth {
-  padding: 30px;
-  padding-bottom: 30px;
-  border-color: black;
-  border-style: inset;
+  padding: 10px;
+  padding-bottom: 10px;
   // margin-right: 400px;
   // margin-left: 400px;
   margin: auto;
@@ -53,11 +86,17 @@ h6 {
   border: 4px solid;
   border-color: black;
   align: center;
+  text-align: center;
   justify-content: center;
   margin: auto;
   padding: 10px;
+  background-color: white;
 }
 
 .hide {
   display: none;
+}
+
+.rsvp-btn {
+  font-family: 'Parisienne', cursive;
 }

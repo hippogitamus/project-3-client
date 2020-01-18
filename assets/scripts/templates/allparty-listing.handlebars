@@ -1,9 +1,10 @@
+
 {{#each party as |party|}}
-  <section data-id="{{party._id}}" class="party-log" >
+  <section data-id="{{party._id}}" class="party-log">
     <h6>Date:</h6>
     <p>
       {{limit party.date 10}}
-    <p>
+    </p>
     <h6>Title:</h6>
     <p>
         {{party.title}}
@@ -12,6 +13,5 @@
     <p>
         {{party.details}}
     </p>
-  </section>
-
+</section>
 {{/each}}

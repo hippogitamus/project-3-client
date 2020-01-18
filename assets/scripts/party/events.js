@@ -145,6 +145,17 @@ const onGetMyRsvp = event => {
     .catch(ui.failure)
 }
 
+const onShowAccountInfo = event => {
+  $('.account-hide').show()
+  $('.account-info').show()
+  $('.account-btn').hide()
+}
+
+const onHideAccountInfo = event => {
+  $('.account-info').hide()
+  $('.account-btn').show()
+}
+
 const addHandlers = event => {
   $('#create-party').on('submit', onCreateParty)
   $('.get-party').on('click', onGetParty)
@@ -155,6 +166,8 @@ const addHandlers = event => {
   $('.clear-party').on('click', onClearParty)
   $('.content').on('click', '.rsvp-btn', onRsvp)
   $('.get-rsvp-btn').on('click', onGetMyRsvp)
+  $('.account-btn').on('click', onShowAccountInfo)
+  $('.hide-account').on('click', onHideAccountInfo)
 }
 
 module.exports = {
