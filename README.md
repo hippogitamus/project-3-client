@@ -1,5 +1,4 @@
 # Project 3 client
-
 # Application Title: Party On
 This application allows the user to Party. More specifically, this SPA allows a user to view existing parties without having to sign up or sign in- making sure that everyone who wants to party, knows which parties are out there! Additionally, after signing in, a user can create a party, update a party, delete a party and view their RSVPs.
 But why? why go through all the trouble to create a web app mainly for cataloging parties? Because parties are excellent. (please read this sentence in Garth voice)
@@ -15,14 +14,22 @@ As an unregistered user, I would like to sign up with email and password.
 As a registered user, I would like to sign in with email and password.
 As a signed in user, I would like to change password.
 As a signed in user, I would like to sign out.
-As a signed in user, I would like to join a chat room.
-As a signed in user in a room, I would like to see all messages in the chat room.
-As a signed in user in a room, I would like to send my own messages to the chat room.
-As a signed in user in a room, I would like to update my own messages to the chat room.
-As a signed in user in a room, I would like to delete my own messages to the chat room.
+
+As an unregistered user, I would like to see all parties.
+As a signed in user, I would like to RSVP to an party.
+As a signed in user, I would like to create my own party.
+As a signed in user, I would like to update my own party.
+As a signed in user, I would like to delete my own party.
+### Party on Wire Frames
+![Party On](https://imgur.com/JP3hvAb)
+### Party on ERD
+![Party On](https://imgur.com/FY7RsHB)
 ### Unsolved Problems & Future Goals
-Along side of additional styling for a bettered user experience, Party On has one unsolved problem. Our delete function is, at present, deleting the owner key but not the user key. This bug allows a user to update the owner of an RSVP or Party. 
-Additionally, future iterations of Party On will ideally notify party owners when an RSVP is submitted for a party. 
+Upon completion of the project, Party on had one relational bug: the owner of a party was being is stored in a 'user' key. This meant that a user was able to update the Owner of a party or RSVP. This was fixed in our second interation of Party On.
+Future goals for Party On include a functionality which will notify a party owner
+when a RSVP is submitted for a given party. Ideally this notification will include the user name of the atendee as well as a current total number of attendees for the
+event in question.
+
 ### Technologies Used
 - jQuery
 - HTML/CSS
